@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Approval Transaction" max_length="40" name="x_snc_bits_approve_approval_transaction" type="collection">
+        <element label="Message" max_length="10000" name="message" type="string"/>
+        <element label="Object" max_length="32" name="object" type="string"/>
+        <element label="Option" max_length="50000" name="option" type="string"/>
+        <element label="Reference" max_length="32" name="reference" type="document_id"/>
+        <element label="Reference To" max_length="100" name="reference_to" type="string"/>
+        <element label="Request State" max_length="40" name="request_state" type="string"/>
+        <index name="index">
+            <element name="reference"/>
+        </index>
+    </element>
+</database>
